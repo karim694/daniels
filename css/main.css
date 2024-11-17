@@ -1,0 +1,836 @@
+/* html and body css */
+:root {
+    --mainFont: "Poppins", sans-serif;
+    --secondaryFont: "Montserrat", sans-serif;
+  }
+  
+  body {
+    font-family: var(--mainFont);
+    scroll-behavior: smooth;
+  }
+  /* end */
+  /* navbar css */
+  body:has([href="#Home"].my-link.active) nav.bg-white {
+    background-color: transparent !important;
+    margin-top: 1rem;
+    box-shadow: unset !important;
+  }
+  body:has([href="#Home"].my-link.active) nav.bg-white a {
+    color: white;
+  }
+  body:has([href="#Home"].my-link.active) nav.bg-white .my-link.active {
+    color: white !important;
+  }
+  body:has([href="#Home"].my-link.active) nav.bg-white .my-link span::after {
+    background-color: white !important;
+  }
+  
+  nav .container .logo {
+    font-family: var(--secondaryFont);
+    font-weight: 800;
+    color: rgb(28, 28, 28);
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  
+  nav .container .my-link {
+    font-weight: 400;
+    color: rgb(17, 17, 17);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  nav .container .my-link span {
+    position: relative;
+  }
+  nav .container .my-link span::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(17, 17, 17);
+    transition: 0.5s all;
+  }
+  nav .container .my-link.active span::after {
+    width: 100%;
+  }
+  .my-link.active {
+    color: rgb(17, 17, 17) !important;
+  }
+  /* nabvar css end */
+  
+  /* header css */
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/header.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  header .content span {
+    font-family: var(--secondaryFont);
+    font-weight: 800;
+    color: white;
+    font-size: 3.125rem;
+    line-height: 3.4375rem;
+  }
+  header .content h1 {
+    font-family: var(--secondaryFont);
+    font-weight: 200;
+    color: white;
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+  }
+  header .content h1 span {
+    font-family: var(--secondaryFont);
+  
+    color: white;
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+    font-weight: 400;
+  }
+  @media screen and (max-width: 768px) {
+    header .content h1 {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+    header .content h1 span {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+  }
+  header .content h1 span::after {
+    content: "Larry Daniels|";
+  
+    animation: moveSpan 5s infinite;
+  }
+  @keyframes moveSpan {
+    0% {
+      content: "L|";
+    }
+    1.6% {
+      content: "La|";
+    }
+    3.2% {
+      content: "Lar|";
+    }
+    4.8% {
+      content: "Larr|";
+    }
+    6.4% {
+      content: "Larry|";
+    }
+    8% {
+      content: "Larry D|";
+    }
+    9.6% {
+      content: "Larry Da|";
+    }
+    11.2% {
+      content: "Larry Dan|";
+    }
+    12.8% {
+      content: "Larry Dani|";
+    }
+    14.4% {
+      content: "Larry Danie|";
+    }
+    16% {
+      content: "Larry Daniel|";
+    }
+    17.6% {
+      content: "Larry Daniels|";
+    }
+    19.2% {
+      content: "Larry Daniel|";
+    }
+    20.8% {
+      content: "Larry Danie|";
+    }
+    22.4% {
+      content: "Larry Dani|";
+    }
+    24% {
+      content: "Larry Dan|";
+    }
+    25.6% {
+      content: "Larry Da|";
+    }
+    27.2% {
+      content: "Larry D|";
+    }
+    28.8% {
+      content: "Larry|";
+    }
+    30.4% {
+      content: "Larr|";
+    }
+    32% {
+      content: "Lar|";
+    }
+    33.6% {
+      content: "La|";
+    }
+    35.2% {
+      content: "L|";
+    }
+    36.8% {
+      content: "|";
+    }
+    38.4% {
+      content: "D|";
+    }
+    40% {
+      content: "De|";
+    }
+    41.6% {
+      content: "Dev|";
+    }
+    43.2% {
+      content: "Deve|";
+    }
+    44.8% {
+      content: "Devel|";
+    }
+    46.4% {
+      content: "Develo|";
+    }
+    48% {
+      content: "Develop|";
+    }
+    49.6% {
+      content: "Develope|";
+    }
+    51.2% {
+      content: "Developer|";
+    }
+    52.8% {
+      content: "Develope|";
+    }
+    54.4% {
+      content: "Develop|";
+    }
+    56% {
+      content: "Develo|";
+    }
+    57.6% {
+      content: "Devel|";
+    }
+    59.2% {
+      content: "Deve|";
+    }
+    60.8% {
+      content: "Dev|";
+    }
+    62.4% {
+      content: "De|";
+    }
+    64% {
+      content: "D|";
+    }
+    65.6% {
+      content: "|";
+    }
+    67.2% {
+      content: "D|";
+    }
+    68.8% {
+      content: "De|";
+    }
+    70.4% {
+      content: "Des|";
+    }
+    72% {
+      content: "Desi|";
+    }
+    73.6% {
+      content: "Desig|";
+    }
+    75.2% {
+      content: "Design|";
+    }
+    76.8% {
+      content: "Designe|";
+    }
+    78.4% {
+      content: "Designer|";
+    }
+    80% {
+      content: "Designe|";
+    }
+    83% {
+      content: "Design|";
+    }
+    87% {
+      content: "Desig|";
+    }
+    90% {
+      content: "Desi|";
+    }
+  
+    93% {
+      content: "Des|";
+    }
+    95% {
+      content: "De|";
+    }
+    98% {
+      content: "D|";
+    }
+    100% {
+      content: "|";
+    }
+  }
+  header .content a {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 2px;
+  }
+  
+  header .content a span {
+    font-weight: 400;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 2.1875rem;
+  }
+  /* header css end */
+  /* about css */
+  .about .content h2 {
+    font-family: var(--secondaryFont);
+    font-weight: 800;
+    color: rgb(52, 52, 52);
+    font-size: 1.875rem;
+    line-height: 2.0625rem;
+  }
+  .about .content span {
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .about .content p {
+    font-weight: 400;
+    color: rgb(116, 129, 130);
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+  .about .content p span {
+    font-weight: 700;
+  }
+  .about .percent .my-fix {
+    background-color: #1c1c1c;
+  }
+  .about .percent .my-fix span {
+    font-family: var(--secondaryFont);
+    font-weight: 500;
+    color: white;
+    font-size: 0.8125rem;
+    line-height: 0.875rem;
+  }
+  .about .buttons .my-btn {
+    font-weight: 400;
+    font-family: var(--mainFont);
+    font-size: 0.8125rem;
+    line-height: 1.1875rem;
+    background-color: #1c1c1c;
+    transition: all 0.5s;
+  }
+  .about .buttons .my-btn:hover {
+    background-color: transparent;
+    color: rgb(52, 52, 52);
+  }
+  .about .buttons .my-btn1 {
+    background-color: transparent;
+    color: rgb(52, 52, 52);
+    font-weight: 400;
+    font-family: var(--mainFont);
+    font-size: 0.8125rem;
+    line-height: 1.1875rem;
+    transition: all 0.5s;
+  }
+  .about .buttons .my-btn1:hover {
+    background-color: #1c1c1c;
+    color: white;
+  }
+  .about .dot {
+    padding-left: 30px;
+    position: relative;
+  }
+  .about .dot::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+  }
+  /* about css end */
+  /* services css */
+  .services {
+    background-color: #f7f7f7;
+  }
+  
+  .services h2 {
+    font-family: var(--secondaryFont);
+    font-weight: 900;
+    color: rgb(52, 52, 52);
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    margin-bottom: 5rem;
+  }
+  .services .title h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .services .layer span {
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .services .layer span i {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .services .layer:hover span i {
+    background-color: #1c1c1c;
+    color: white;
+  }
+  .services .layer h3 {
+    font-family: var(--secondaryFont);
+    font-weight: 800;
+    color: rgb(52, 52, 52);
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  }
+  .services .layer p {
+    font-weight: 400;
+    color: rgb(116, 129, 130);
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  /* services css end */
+  /* works css */
+  .works h2 {
+    font-family: var(--secondaryFont);
+    font-weight: 900;
+    color: rgb(52, 52, 52);
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    margin-bottom: 5rem;
+  }
+  .works .title h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+  }
+  .works .inner h3 {
+    font-family: var(--secondaryFont);
+    font-weight: 700;
+    color: rgb(52, 52, 52);
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    letter-spacing: 2px;
+  }
+  .works .inner .icons a {
+    font-weight: 400;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+    margin-inline: 2px;
+    text-decoration: none;
+  }
+  .works .inner .icons a i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  .works .inner .icons a i:hover {
+    background-color: white;
+    color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+  }
+  .works .container .inner {
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .works .container .photo:hover .inner {
+    opacity: 1;
+  }
+  
+  .works .my-nav .nav-link {
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    line-height: 1.4375rem;
+  }
+  
+  .works .my-nav .nav-link span {
+    position: relative;
+  }
+  .works .my-nav .nav-link span::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(17, 17, 17);
+    transition: 0.5s all;
+  }
+  .works .my-nav .nav-link.active span::after {
+    width: 100%;
+  }
+  /* works css end */
+  /* clients css */
+  .clients {
+    background-color: #f7f7f7;
+  }
+  
+  .clients h2 {
+    font-family: var(--secondaryFont);
+    font-weight: 900;
+    color: rgb(52, 52, 52);
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    margin-bottom: 5rem;
+  }
+  .clients .title h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+  }
+  .clients .my-slider .photo img {
+    width: 100px;
+    border-radius: 50%;
+  }
+  .clients .my-slider p {
+    font-weight: 400;
+    color: rgb(116, 129, 130);
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+  .clients .my-slider h3 {
+    font-family: var(--secondaryFont);
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+  .clients .my-slider span {
+    font-weight: 600;
+    color: rgb(136, 136, 136);
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+  }
+  .clients .my-slider .my-btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+  }
+  /* clients css end */
+  /* happy css */
+  .happy .layer span {
+    font-weight: 400;
+    color: rgb(52, 52, 52);
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+  }
+  .happy .layer h2 {
+    font-family: var(--secondaryFont);
+    font-weight: 900;
+    color: rgb(52, 52, 52);
+    font-size: 1.875rem;
+    line-height: 2.0625rem;
+  }
+  .happy .layer h3 {
+    font-weight: 600;
+    color: rgb(116, 129, 130);
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+  /* happy css end */
+  /* team css */
+  @media screen and (max-width: 769px) {
+    .team .layer img {
+      width: 100%;
+    }
+  }
+  .team {
+    background-color: #f7f7f7;
+  }
+  .team h2 {
+    font-family: var(--secondaryFont);
+    font-weight: 900;
+    color: rgb(52, 52, 52);
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    margin-bottom: 5rem;
+  }
+  .team .title h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+  }
+  .team .layer {
+    position: relative;
+  }
+  .team .layer .inner {
+    background-color: #5b5b5b;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+  }
+  .team .layer .inner h3 {
+    font-family: var(--secondaryFont);
+    font-weight: 500;
+    color: white;
+    font-size: 1.5625rem;
+    line-height: 1.75rem;
+  }
+  .team .layer .inner h4 {
+    font-family: var(--secondaryFont);
+    font-weight: 700;
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+  }
+  .team .layer .inner2 {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    text-align: center;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    transition: 0.5s;
+  }
+  .team .layer .inner2 a {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-inline: 7px;
+  }
+  .team .layer .inner2 a:hover {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  .team .layer {
+    transition: all 0.5s;
+  }
+  
+  .team .layer:hover .inner2 {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+  
+  .team .layer .photo {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .team .layer img {
+    transition: all 0.4s;
+  }
+  
+  .team .layer:hover img {
+    transform: scale(1.2);
+  }
+  /* team css end */
+  /* contact css */
+  
+  .contact h2 {
+    font-family: var(--secondaryFont);
+    font-weight: 900;
+    color: rgb(52, 52, 52);
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    margin-bottom: 5rem;
+  }
+  .contact .title h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+  }
+  .contact .layer span {
+    font-weight: 400;
+    color: #1c1c1c;
+    font-size: 1.5625rem;
+    line-height: 1.5625rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .layer span i {
+    width: 60px;
+    height: 60px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  .contact .layer:hover span i {
+    background-color: #1c1c1c;
+    color: #f4f4f4;
+  }
+  
+  .contact .layer h3 {
+    font-family: var(--secondaryFont);
+    font-weight: 700;
+    color: rgb(52, 52, 52);
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+  .contact .layer h4 {
+    font-weight: 400;
+    color: rgb(116, 129, 130);
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+  .contact .input .my-form {
+    background-color: #f4f4f4;
+    border-color: transparent;
+  }
+  .contact .input .my-form:focus {
+    box-shadow: 0px 0px 0px transparent;
+  }
+  .contact .my-text {
+    background-color: #f4f4f4;
+    border-color: transparent;
+  }
+  .contact .my-text:focus {
+    box-shadow: 0px 0px 0px transparent;
+  }
+  .mt-6 {
+    margin-top: 60px;
+  }
+  .contact .my-btn {
+    font-weight: 400;
+    font-family: var(--mainFont);
+    font-size: 0.8125rem;
+    line-height: 1.1875rem;
+    background-color: #1c1c1c;
+    transition: all 0.5s;
+    padding-inline: 1.875rem;
+  }
+  .contact .my-btn:hover {
+    background-color: transparent;
+    color: rgb(52, 52, 52);
+  }
+  .contact .button {
+    left: 0;
+    top: 115%;
+  }
+  /* contact css end */
+  /* footer css */
+  footer {
+    background-color: #1c1c1c;
+  }
+  footer .container p {
+    font-weight: 400;
+    color: rgb(116, 129, 130);
+    font-size: 0.8125rem;
+    line-height: 1.3125rem;
+    word-spacing: 0.125rem;
+  }
+  
+  /* end of css */
